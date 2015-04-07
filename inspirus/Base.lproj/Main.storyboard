@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="inspirus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1.png" translatesAutoresizingMaskIntoConstraints="NO" id="A3g-BZ-B0B">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay Hungry, Stay Foolish" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdu-eM-Yg7">
+                                <rect key="frame" x="16" y="28" width="288" height="450"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pED-XJ-QfZ">
+                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9US-IG-dzn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Inspire Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="inspireMeDidTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dO9-is-0Fv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hdu-eM-Yg7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="1mq-Z9-gA8"/>
+                            <constraint firstItem="A3g-BZ-B0B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="21L-M9-kom"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pED-XJ-QfZ" secondAttribute="bottom" id="2RF-4A-KS6"/>
+                            <constraint firstItem="A3g-BZ-B0B" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="8Ur-EM-APA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="A3g-BZ-B0B" secondAttribute="bottom" id="Bbr-mZ-J6e"/>
+                            <constraint firstItem="pED-XJ-QfZ" firstAttribute="top" secondItem="hdu-eM-Yg7" secondAttribute="bottom" constant="30" id="E52-ZT-roQ"/>
+                            <constraint firstAttribute="trailing" secondItem="pED-XJ-QfZ" secondAttribute="trailing" id="XI4-rA-8Qh"/>
+                            <constraint firstItem="pED-XJ-QfZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="bq6-mI-9K1"/>
+                            <constraint firstAttribute="trailing" secondItem="A3g-BZ-B0B" secondAttribute="trailing" id="ce0-2c-3kD"/>
+                            <constraint firstItem="hdu-eM-Yg7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="lJ0-bl-EHP"/>
+                            <constraint firstAttribute="trailing" secondItem="hdu-eM-Yg7" secondAttribute="trailing" constant="16" id="ut1-hI-g91"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="A3g-BZ-B0B" id="aFC-yR-Li4"/>
+                        <outlet property="quoteLabel" destination="hdu-eM-Yg7" id="RUS-4E-UCm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2336" y="260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image1.png" width="879" height="1054"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
